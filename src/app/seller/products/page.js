@@ -119,7 +119,12 @@ export default function SellerProductsPage() {
         />
         {uploading && <p className="text-sm text-gray-500">Uploading image...</p>}
         {form.image && (
-          <img src={form.image} alt="Preview" className="h-40 mt-2 rounded" />
+          <Image 
+          src={form.image} 
+          alt="Preview" 
+          width={500}
+          height={300}
+          className="h-40 mt-2 rounded" />
         )}
 
         <input
