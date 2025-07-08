@@ -12,8 +12,8 @@ export default function AboutPage() {
         <h1 className="text-3xl font-bold mb-6">About Us</h1>
 
         <p className="mb-4">
-          Welcome to <span className="font-semibold">ThrifNix</span> – your go-to destination for unique, stylish, and affordable thrifted fashion!
-          We’re on a mission to make sustainable fashion accessible, fun, and rewarding for everyone.
+          Welcome to <span className="font-semibold">ThrifNix</span> - your go-to destination for unique, stylish, and affordable thrifted fashion!
+          We&apos;re on a mission to make sustainable fashion accessible, fun, and rewarding for everyone.
         </p>
 
         <h2 className="text-xl font-semibold mt-6 mb-2">Our Story</h2>
@@ -38,7 +38,7 @@ export default function AboutPage() {
 
         <h2 className="text-xl font-semibold mt-6 mb-2">Get In Touch</h2>
         <p className="mb-4">
-          We'd love to hear from you! Whether you have a question, suggestion, or just want to say hello,
+          We&apos;d love to hear from you! Whether you have a question, suggestion, or just want to say hello,
           feel free to reach out to us at <a href="mailto:support@thrifnix.com" className="text-blue-600 underline">support@thrifnix.com</a>.
         </p>
 

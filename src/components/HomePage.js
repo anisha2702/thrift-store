@@ -92,7 +92,7 @@ export default function HomePage() {
       <main className="bg-[#FFE5EC] flex-grow flex flex-col items-center py-7 m-[-36px] ">
 
        
-      <Reveal>
+      <Reveal delay={0.0}>
         <h2 className="text-4xl  md:text-[67px] font-serif font-bold mb-2">DISCOVER THRIFTED</h2>
 
         <h3 className="text-4xl md:text-[50px] font-serif font-bold mt-4 mb-4 text-center">FASHION</h3>
@@ -122,7 +122,7 @@ export default function HomePage() {
         {/* Category Toggle Section */}
         <div className='mx-auto w-[80%]'
         >
-          <Reveal>
+          <Reveal delay={0.4}>
             <div className="bg-white px-8 py-4 rounded  max-w-5xl mt-6 relative mx-auto">
               <div className="flex justify-around font-serif font-medium text-lg relative z-10">
 
@@ -189,13 +189,13 @@ export default function HomePage() {
         </div>
 
         <div className='mx-auto w-[80%]'>
-          <Reveal className='relative z-0'>
+          <Reveal delay={0.5} className='relative z-0'>
             <NewArrivals />
           </Reveal>
         </div>
 
         <div className='mx-auto w-[80%]'>
-          <Reveal>
+          <Reveal delay={0.6}>
             <section className="mt-5 py-12 px-6 text-gray-800">
               <div className="max-w-5xl mx-auto text-center">
                 <h2 className="text-3xl font-bold mb-4">Why Thrift?</h2>
@@ -235,7 +235,7 @@ export default function HomePage() {
         </div>
 
         <div className='mx-auto w-[80%]'>
-          <Reveal>
+          <Reveal delay={0.7}>
             <section className="bg-black py-12 px-6 m overflow-hidden">
               <div className="max-w-6xl mx-auto flex flex-col-reverse md:flex-row items-center gap-10 group transition duration-700 ease-in-out">
 
@@ -265,7 +265,7 @@ export default function HomePage() {
 
         {/* WhatsApp Form Section */}
         <div className="mx-auto w-[60%]">
-          <Reveal>
+          <Reveal delay={0.8}>
             <div className="bg-gray-100 p-6 rounded-lg border border-gray-300 shadow-sm mt-10">
               <h2 className="text-xl font-semibold text-gray-800 mb-2">
                 Got preloved clothes to donate?
@@ -301,7 +301,7 @@ export default function HomePage() {
 
         {/* Continue with the rest of your homepage content */}
         <div className='mx-auto w-[60%]'>
-          <Reveal>
+          <Reveal delay={0.9}>
             <FaqSection />
           </Reveal>
         </div>
