@@ -2,7 +2,8 @@
 
 import { notFound } from "next/navigation";
 import { useCart } from "@/context/CartContext"; // 👈 Import Cart
-import {use, useEffect, useState } from "react";
+import { use, useEffect, useState } from "react";
+import Image from "next/image";
 
 export default function ProductPage({ params: asyncParams }) {
   const params = use(asyncParams);
@@ -30,10 +31,13 @@ export default function ProductPage({ params: asyncParams }) {
     <div className="max-w-3xl mx-auto py-10 px-4">
       <h1 className="text-3xl font-bold mb-6">{product.title}</h1>
 
-      <img
+      <Image
         src={product.image}
         alt={product.title}
-        className="w-full max-h-[400px] object-cover rounded mb-6"
+        width={800}
+        height={400}
+        className="w-full object-cover rounded mb-6"
+        style={{ maxHeight: "400px" }}
       />
 
       <p className="text-lg text-gray-700 mb-4">{product.description}</p>

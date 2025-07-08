@@ -53,7 +53,7 @@ export default function SellerProductsPage() {
     } else {
       fetchProducts();
     }
-  }, [session]);
+  }, [router,session]);
 
   const fetchProducts = async () => {
     const res = await fetch("/api/seller-products");

@@ -7,6 +7,7 @@ import FaqSection from './faqSection';
 import NewArrivals from './NewArrivals';
 import Footer from './Footer';
 import Reveal from './Reveal';
+import Image from 'next/image';
 
 
 export default function HomePage() {
@@ -62,7 +63,7 @@ export default function HomePage() {
       </header>
 
       {/* Vertical Seller Login Button */}
-      
+
 
       {/* Cart Floating Button - Top Right Corner */}
       <div className="relative top-[6px] left-[1431px] z-40">
@@ -91,15 +92,15 @@ export default function HomePage() {
       {/* Hero Section */}
       <main className="bg-[#FFE5EC] flex-grow flex flex-col items-center py-7 m-[-36px] ">
 
-       
-      <Reveal delay={0.0}>
-        <h2 className="text-4xl  md:text-[67px] font-serif font-bold mb-2">DISCOVER THRIFTED</h2>
 
-        <h3 className="text-4xl md:text-[50px] font-serif font-bold mt-4 mb-4 text-center">FASHION</h3>
-        <p className="text-lg mb-4 text-center">Find unique and pre-owned clothing</p>
+        <Reveal delay={0.0}>
+          <h2 className="text-4xl  md:text-[67px] font-serif font-bold mb-2">DISCOVER THRIFTED</h2>
+
+          <h3 className="text-4xl md:text-[50px] font-serif font-bold mt-4 mb-4 text-center">FASHION</h3>
+          <p className="text-lg mb-4 text-center">Find unique and pre-owned clothing</p>
         </Reveal>
-       
-        
+
+
 
 
         {/* Shop Now Button (No Dropdown) */}
@@ -255,7 +256,14 @@ export default function HomePage() {
                 </div>
 
                 <div className="flex-1 flex justify-center animate-fade-in-left">
-                  <img src="/images/thrift-image.png" alt="Woman holding clothes bag" className="w-50 h-auto object-cover rounded-xl shadow-md transform transition duration-500 group-hover:scale-105 " />
+                  <Image
+                    src="/images/thrift-image.png"
+                    alt="Woman holding clothes bag"
+                    width={200} // or the actual width of your image
+                    height={100} // or actual height
+                    className="object-cover rounded-xl shadow-md transform transition duration-500 group-hover:scale-105"
+                  />
+
                 </div>
 
               </div>

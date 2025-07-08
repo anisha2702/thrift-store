@@ -22,7 +22,7 @@ export default function LoginPage() {
         signOut(); // Immediately log out seller or admin
       }
     }
-  }, [session, status]);
+  }, [router,session, status]);
 
   const handleLogin = async (e) => {
     e.preventDefault();

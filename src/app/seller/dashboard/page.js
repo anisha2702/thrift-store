@@ -36,7 +36,7 @@ export default function SellerDashboard() {
     if (!session || session.user.role !== "seller") {
       router.push("/seller-login");
     }
-  }, [session, status]);
+  }, [router,session, status]);
 
   useEffect(() => {
     const fetchProducts = async () => {

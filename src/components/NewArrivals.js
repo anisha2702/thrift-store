@@ -2,11 +2,12 @@
 
 import { useEffect, useState } from 'react';
 import Link from 'next/link';
-import { useCart } from '@/context/CartContext'; // ✅ Import cart context
+import Image from 'next/image'; // ✅ import Image from next/image
+import { useCart } from '@/context/CartContext';
 
 export default function NewArrivals() {
   const [products, setProducts] = useState([]);
-  const { addToCart } = useCart(); // ✅ Get addToCart function
+  const { addToCart } = useCart();
 
   useEffect(() => {
     const fetchNewestProducts = async () => {
@@ -33,10 +34,13 @@ export default function NewArrivals() {
           <div key={product.id} className="bg-white rounded-lg shadow-md overflow-hidden flex flex-col">
             <Link href={`/product/${product.id}`} className="block">
               <div className="relative w-full h-64">
-                <img
+                <Image
                   src={product.image}
                   alt={product.title}
-                  className="object-cover w-full h-full"
+                  layout="fill" // 🔁 fill the container div
+                  objectFit="cover" // crop + cover
+                  className="rounded-t"
+                  priority={true}
                 />
               </div>
             </Link>
